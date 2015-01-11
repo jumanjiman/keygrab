@@ -22,6 +22,11 @@ Example for https://github.com/jumanjiman/
     ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQDLIqyXA1BXyPhss1Qv3iKhMdB1+u2ejdGPSaIRvNREgsAIinZiumRuRCBNqjr73tUzYqdnxmrkhYh/bKFYlE3pfFPxuadurbAJ07lTGtObfKmoKe5N0qfndHVZS7y/tjNg4J6LkXZEZnecMr83pYmbc0R09E2o0pc/aBcWfXkJ2Q==
     ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAyc0e+WI8MVZIQKEztgC8EdWJzXgm2XyrRd2Q3HsOXdDtjtAHf5VGpxqTx4+CI+ibXlP8LwrqOmVuNzwvVF8yO20WR+GLvqKLT0U7bx+2PxXbBtxJJhAAqHWSE4syv3wxLuuaMhnbFUEKotbb3NTjQ0JqEZtc4f6YVPow2IrF/dOGiRocS9eX8ASh2jShU4SJpyheKjZ3EavETYgQyRPUDykTvRbmBBwNNV3amXxaLOB17ZZ7FKOX4SbpZVHkYjzahY9PT6FEly6dWs5MPKBHQsUm86IKJ7Ua3LVPcnP6wkUtgKsWMLwGL4DOLuBax9avyHTwYo89k484nAQjHxONrQ==
 
+To work with individual keys, do something like:
+
+    $ IFS=$'\n' keys=$(./keygrab.sh jumanjiman)
+    $ for key in $keys; do echo $key; done
+
 
 License
 -------
