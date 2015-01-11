@@ -27,6 +27,9 @@ To work with individual keys, do something like:
     $ IFS=$'\n' keys=$(./keygrab.sh jumanjiman)
     $ for key in $keys; do echo $key; done
 
+:warning: You should regularly check the keys on your account at
+https://github.com/settings/ssh
+
 
 License
 -------
